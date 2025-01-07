@@ -9,7 +9,8 @@
 3. *Daiva Baskoro Upangga* (NIM: 4522210045)
 
 ## ✨ Use Case
-![image]([https://github.com/user-attachments/assets/926abca0-72e5-44c7-9a31-ea81de7b88c2](https://github.com/user-attachments/assets/926abca0-72e5-44c7-9a31-ea81de7b88c2))
+![WhatsApp Image 2025-01-08 at 00 11 23_a86fb477](https://github.com/user-attachments/assets/1f99f5ad-607d-4a95-b379-83cc9699f857)
+
 
 ## ➢ Membuat Akun dan Grup
 **Aktor**: 
@@ -39,7 +40,8 @@
 ---
 
 ## ✨ ERD
-![image (1)]([https://github.com/user-attachments/assets/2a73ef91-1f60-4f6e-90d6-fbf51981be8d](https://github.com/user-attachments/assets/2a73ef91-1f60-4f6e-90d6-fbf51981be8d)))
+![Untitled](https://github.com/user-attachments/assets/37a68c67-4ed5-46f8-a22b-a04b3de47648)
+
 
 ---
 
