@@ -1,0 +1,164 @@
+/* Pengaturan umum */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #0056b3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.active {
+    left: 0; /* Sidebar muncul */
+}
+
+/* Pengaturan untuk heading sidebar */
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Pengaturan untuk daftar menu */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Tombol Toggle Sidebar */
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 100%;
+    transform: translateX(10px);
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background-color: #003f8a;
+}
+
+/* Konten Utama */
+.main-content {
+    margin-left: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+/* Statistik */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.stat-box p i {
+    margin-right: 10px;
+    color: #3498db;
+}
+.stat-box {
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.stat-box h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+
+.stat-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Tabel */
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.projects-table th, .projects-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.projects-table th {
+    background-color: #0056b3;
+    color: white;
+}
+
+.projects-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Progress Bar */
+.projects-table .progress-bar {
+    background: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 8px;
+    width: 100%;
+}
+
+.projects-table .progress {
+    background-color: #0056b3;
+    height: 100%;
+    width: 50%; /* Progress bar default */
+}
+
+/* Tombol */
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #0056b3;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #003f8a;
+}
