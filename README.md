@@ -132,4 +132,16 @@ Mewakili data penilaian terhadap tugas. Setiap penilaian memiliki atribut beriku
    - Satu tugas dapat memiliki banyak penilaian, tetapi satu penilaian hanya terkait dengan satu tugas.
 
 ---
+-- Interpretasi Umum --
 
+1. Pembuatan dan Pengelolaan Grup:
+   - Pengguna dapat membuat grup baru, mengundang anggota, dan mengelola keanggotaan.
+
+2. Pengelolaan Tugas:
+   - Pengguna dapat membuat, mengedit, menghapus, dan menandai status tugas dalam grup.
+
+3. Kolaborasi:
+   - Anggota grup dapat bekerja sama untuk menyelesaikan tugas dan melacak progres.
+
+4. Penilaian Tugas:
+   - Penilaian tugas dilakukan oleh dosen atau anggota grup lainnya dengan memberikan nilai dan komentar.
