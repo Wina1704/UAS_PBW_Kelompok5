@@ -7,94 +7,126 @@
 1. *Putri Juliani* (NIM: 4522210015)
 2. *Wina Windari Kusdarniza* (NIM: 4522210017)
 3. *Daiva Baskoro Upangga* (NIM: 4522210045)
-Use Case Diagram
 
-1. Membuat Akun dan Grup
-Aktor:
-Users
-Use Case Dosen:
-Register: Users melakukan pendaftaran akun baru untuk dosen dan mahasiswa.
-Login: Users yang sudah terdaftar masuk ke dalam sistem.
-Logout: Users keluar dari sistem.
-Melakukan 
-Penilaian: Users dapat melakukan penilaian terhadap tugas mahasiswa.
-Menambahkan Mata Kuliah Baru: Users dapat menambahkan mata kuliah baru yang user ampu.
-Melihat Daftar Mata Kuliah: Users dapat melihat daftar mata kuliah yang di ampu.
+## ✨ Use Case
+![image](https://github.com/user-attachments/assets/926abca0-72e5-44c7-9a31-ea81de7b88c2)
 
-Use Case Mahasiswa:
-Login: Users yang sudah terdaftar masuk ke dalam sistem.
-Logout: Users keluar dari sistem.
-Membuat Grup: Users dapat membuat grup baru.
-Mengundang Anggota: Users dapat mengundang anggota lain ke dalam grup yang telah dibuat.
-Melihat Daftar Anggota: Users dapat melihat daftar anggota yang ada di dalam grup.
+## ➢ Membuat Akun dan Grup
+**Aktor**: 
+- Users
 
-3. Membuat Tugas Pada Sistem
-Aktor:
-Users
-Use Case:
-Membuat Tugas: Users dapat membuat tugas baru.
-Mengedit Tugas: Users dapat mengubah detail tugas yang sudah ada.
-Menghapus Tugas: Users dapat menghapus tugas yang tidak diperlukan lagi.
-Menandai Tugas Selesai: Users dapat menandai tugas sebagai selesai.
-Menandai Tugas Belum Selesai: Users dapat menandai tugas yang belum selesai.
-![WhatsApp Image 2025-01-08 at 00 11 23_a86fb477](https://github.com/user-attachments/assets/3cdd3419-5ffe-4619-8449-6ebb7ec3e142)
+**Use Case**:
+- **Register**: Pengguna melakukan pendaftaran akun baru (baik untuk dosen maupun mahasiswa).
+- **Login**: Pengguna yang sudah terdaftar masuk ke dalam sistem.
+- **Logout**: Pengguna keluar dari sistem.
 
+### **Use Case (Dosen)**:
+- **Register**: Pengguna melakukan pendaftaran akun baru (baik untuk dosen maupun mahasiswa).
+- **Login**: Pengguna yang sudah terdaftar masuk ke dalam sistem.
+- **Melakukan Penilaian**: Dosen dapat memberikan penilaian terhadap tugas mahasiswa.
+- **Menambahkan Mata Kuliah Baru**: Dosen dapat menambahkan mata kuliah baru yang diampu.
+- **Melihat Daftar Mata Kuliah**: Dosen dapat melihat daftar mata kuliah yang mereka ampu.
+- **Logout**: Pengguna keluar dari sistem.
 
-ERD (Entity-Relationship Diagram)
-Entitas Utama
+### **Use Case (Mahasiswa)**:
+- **Login**: Pengguna yang sudah terdaftar masuk ke dalam sistem.
+- **Membuat Grup**: Mahasiswa dapat membuat grup baru.
+- **Mengundang Anggota**: Mahasiswa dapat mengundang anggota lain ke dalam grup yang telah dibuat.
+- **Melihat Daftar Anggota**: Mahasiswa dapat melihat daftar anggota yang ada di dalam grup.
+- **Membuat Tugas**: Pengguna dapat membuat tugas baru.
+- **Logout**: Pengguna keluar dari sistem.
 
-Users
-user_id: Identitas unik pengguna.
-nama: Nama lengkap pengguna.
-email: Email pengguna untuk autentikasi.
-role: Peran pengguna dalam sistem (mahasiswa/dosen/admin).
-mata_kuliah: ID mata kuliah yang diambil pengguna.
-password: Kata sandi untuk login.
-tanggal_pembuatan: Tanggal akun dibuat.
+---
 
-Groups
-group_id: Identitas unik grup.
-nama: Nama grup.
-deskripsi: Deskripsi singkat mengenai grup.
-tanggal_pembuatan: Tanggal grup dibuat.
+## ✨ ERD
+![image (1)](https://github.com/user-attachments/assets/2a73ef91-1f60-4f6e-90d6-fbf51981be8d)
 
-Group_Members (Tabel Perantara)
-member_id: Identitas unik anggota grup.
-user_id: Referensi ke entitas Users.
-group_id: Referensi ke entitas Groups.
-deskription: Deskripsi peran anggota dalam grup.
-status: Status keanggotaan dalam grup.
-image_path: Lokasi gambar profil anggota.
+---
 
-Tasks
-task_id: Identitas unik tugas.
-group_id: Referensi ke entitas Groups.
-nama: Nama tugas.
-mata_kuliah: Referensi ke entitas Mata Kuliah.
-deskripsi: Deskripsi tugas.
-tanggal_jatuh_tempo: Deadline tugas.
-nilai: Nilai tugas (jika sudah dinilai).
-komentar: Komentar terkait tugas.
-status: Status tugas (selesai/belum selesai).
-file_path: Lokasi file terkait tugas.
+## 🗃 Entitas Utama
+### 1. *Users*
+Mewakili pengguna sistem. Setiap pengguna memiliki atribut berikut:
+- *user_id*: Identitas unik pengguna.
+- *nama*: Nama lengkap pengguna.
+- *email*: Email pengguna untuk autentikasi.
+- *role*: Peran pengguna dalam sistem (mahasiswa/dosen/admin).
+- *password*: Kata sandi untuk login.
+- *tanggal_pembuatan*: Tanggal akun dibuat.
 
-Task_Assignments (Tabel Perantara)
-assignment_id: Identitas unik penugasan.
-task_id: Referensi ke entitas Tasks.
-user_id: Referensi ke entitas Users.
+### 2. *Groups*
+Mewakili kelompok atau tim dalam sistem. Setiap grup memiliki atribut berikut:
+- *group_id*: Identitas unik grup.
+- *nama*: Nama grup.
+- *deskripsi*: Deskripsi singkat mengenai grup.
+- *tanggal_pembuatan*: Tanggal grup dibuat.
 
-Mata_Kuliah
-id_mk: Identitas unik mata kuliah.
-nama_mk: Nama mata kuliah.
-dosen_pengampu: Dosen yang mengampu mata kuliah.
-deskripsi: Deskripsi mata kuliah.
+### 3. *Group_Members (Tabel Perantara)*
+Mewakili hubungan many-to-many antara Users dan Groups. Atributnya adalah:
+- *member_id*: Identitas unik anggota grup.
+- *user_id*: Referensi ke entitas Users.
+- *group_id*: Referensi ke entitas Groups.
+- *deskripsi*: Deskripsi peran anggota dalam grup.
+- *status*: Status keanggotaan dalam grup.
+- *image_path*: Lokasi gambar profil anggota.
 
-Penilaian
-id: Identitas unik penilaian.
-group_id: Referensi ke entitas Groups.
-task_id: Referensi ke entitas Tasks.
-nilai: Nilai yang diberikan.
-komentar: Komentar penilaian.
-tanggal_penilaian: Tanggal penilaian dibuat.
+### 4. *Tasks*
+Mewakili tugas yang diberikan kepada pengguna. Setiap tugas memiliki atribut berikut:
+- *task_id*: Identitas unik tugas.
+- *group_id*: Referensi ke entitas Groups.
+- *nama*: Nama tugas.
+- *mata_kuliah*: Referensi ke entitas Mata Kuliah.
+- *deskripsi*: Deskripsi tugas.
+- *tanggal_jatuh_tempo*: Deadline tugas.
+- *nilai*: Nilai tugas (jika sudah dinilai).
+- *komentar*: Komentar terkait tugas.
+- *status*: Status tugas (selesai/belum selesai).
+- *file_path*: Lokasi file terkait tugas.
 
-![Untitled](https://github.com/user-attachments/assets/513a485e-0fe1-45ad-8383-d980aa10974d)
+### 5. *Task_Assignments (Tabel Perantara)*
+Mewakili hubungan many-to-many antara Users dan Tasks. Atributnya adalah:
+- *assignment_id*: Identitas unik penugasan.
+- *task_id*: Referensi ke entitas Tasks.
+- *user_id*: Referensi ke entitas Users.
+
+### 6. *Mata_Kuliah*
+Mewakili informasi tentang mata kuliah. Setiap mata kuliah memiliki atribut berikut:
+- *id_mk*: Identitas unik mata kuliah.
+- *nama_mk*: Nama mata kuliah.
+- *dosen_pengampu*: Dosen yang mengampu mata kuliah.
+- *deskripsi*: Deskripsi mata kuliah.
+
+### 7. *Penilaian*
+Mewakili data penilaian terhadap tugas. Setiap penilaian memiliki atribut berikut:
+- *id*: Identitas unik penilaian.
+- *group_id*: Referensi ke entitas Groups.
+- *task_id*: Referensi ke entitas Tasks.
+- *nilai*: Nilai yang diberikan.
+- *komentar*: Komentar penilaian.
+- *tanggal_penilaian*: Tanggal penilaian dibuat.
+
+---
+
+## 🔗 Hubungan Antar Entitas
+
+1. **Users** dan **Groups** (many-to-many)
+   - Satu pengguna dapat menjadi anggota dari banyak grup, dan satu grup dapat memiliki banyak anggota.
+   - Implementasi: Melalui tabel **Group_Members**.
+
+2. **Users** dan **Tasks** (many-to-many)
+   - Satu pengguna dapat ditugaskan pada banyak tugas, dan satu tugas dapat ditugaskan kepada banyak pengguna.
+   - Implementasi: Melalui tabel **Task_Assignments**.
+
+3. **Groups** dan **Tasks** (one-to-many)
+   - Satu grup dapat memiliki banyak tugas, tetapi satu tugas hanya dapat dimiliki oleh satu grup.
+
+4. **Tasks** dan **Mata_Kuliah** (many-to-one)
+   - Banyak tugas dapat terkait dengan satu mata kuliah.
+
+5. **Groups** dan **Penilaian** (one-to-many)
+   - Satu grup dapat memiliki banyak penilaian, tetapi satu penilaian hanya dapat terkait dengan satu grup.
+
+6. **Tasks** dan **Penilaian** (one-to-many)
+   - Satu tugas dapat memiliki banyak penilaian, tetapi satu penilaian hanya terkait dengan satu tugas.
+
+---
+
