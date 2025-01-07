@@ -132,7 +132,7 @@ Mewakili data penilaian terhadap tugas. Setiap penilaian memiliki atribut beriku
    - Satu tugas dapat memiliki banyak penilaian, tetapi satu penilaian hanya terkait dengan satu tugas.
 
 ---
--- Interpretasi Umum --
+## 🌐 Interpretasi Umum
 
 1. Pembuatan dan Pengelolaan Grup:
    - Pengguna dapat membuat grup baru, mengundang anggota, dan mengelola keanggotaan.
@@ -145,3 +145,7 @@ Mewakili data penilaian terhadap tugas. Setiap penilaian memiliki atribut beriku
 
 4. Penilaian Tugas:
    - Penilaian tugas dilakukan oleh dosen atau anggota grup lainnya dengan memberikan nilai dan komentar.
+---
+## 📂 Instalasi
+```bash
+git clone https://github.com/Wina1704/UAS_PBW_Kelompok5
