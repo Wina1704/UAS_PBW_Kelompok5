@@ -40,7 +40,8 @@
 ---
 
 ## ✨ ERD
-![Untitled](https://github.com/user-attachments/assets/37a68c67-4ed5-46f8-a22b-a04b3de47648)
+![WhatsApp Image 2025-01-07 at 22 52 36_ab1798f1](https://github.com/user-attachments/assets/f0af65cf-d5eb-4970-9f06-779202b77b15)
+
 
 
 ---
